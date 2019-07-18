@@ -27,8 +27,8 @@ module PhotogramQueries
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
     # Load AdminUser model
-    config.autoload_paths += %W(#{config.root}/app/vendor_models)
-    config.autoload_paths += Dir["#{config.root}/app/vendor_models/**/"]
+    config.autoload_paths += %W(#{config.root}/vendor/app/models)
+    config.autoload_paths += Dir["#{config.root}/vendor/app/models/**/"]
 
     config.action_controller.default_protect_from_forgery = false
     config.active_record.belongs_to_required_by_default = false
